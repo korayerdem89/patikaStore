@@ -1,14 +1,22 @@
 import React from 'react';
 
-import {View, Text} from 'react-native';
+import {View, Text, SafeAreaView, Button} from 'react-native';
 
-function App() {
+const App = () => {
   return (
-    <View>
-      <Text style={{color:'red'}}>Hello World</Text>
-    </View>
+    <SafeAreaView>
+      <View>
+        <Text>Hello World</Text>
+      </View>
+      <Text>Hello World 31</Text>
+      <Button
+        title="Here Press Me!"
+        onPress={() => {
+          console.log('merhaba');
+        }}
+      />
+    </SafeAreaView>
   );
-} 
+};
 
 export default App;
-
