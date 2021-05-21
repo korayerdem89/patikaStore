@@ -1,22 +1,26 @@
 import React from 'react';
 
-import {View, Text, SafeAreaView, Button} from 'react-native';
+import {View, Text, SafeAreaView, Button, StyleSheet} from 'react-native';
 
 const App = () => {
+  function sayHello() {
+    console.log('merhabalar');
+  }
   return (
     <SafeAreaView>
-      <View>
+      <View style={styles.container}>
         <Text>Hello World</Text>
+        <Text>Hello World 31</Text>
       </View>
-      <Text>Hello World 31</Text>
-      <Button
-        title="Here Press Me!"
-        onPress={() => {
-          console.log('merhaba');
-        }}
-      />
+      
+      <Button title="Here Press Me!" onPress={sayHello} />
     </SafeAreaView>
   );
 };
 
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: 'purple',
+  },
+});
 export default App;
