@@ -8,6 +8,8 @@ import {
   StyleSheet,
 } from 'react-native';
 
+import Card from './components/Card';
+
 const App = () => {
   return (
     <SafeAreaView style={styles.container}>
@@ -20,6 +22,8 @@ const App = () => {
           <Text style={styles.card_button_title}>I LIKED</Text>
         </TouchableOpacity>
       </View>
+      <Card />
+      <Card />
     </SafeAreaView>
   );
 };
