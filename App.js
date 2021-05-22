@@ -1,46 +1,66 @@
 import React from 'react';
 
-import {View, SafeAreaView, StyleSheet} from 'react-native';
+import {
+  View,
+  SafeAreaView,
+  Text,
+  TouchableOpacity,
+  StyleSheet,
+} from 'react-native';
 
 const App = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.box_1} />
-
-      <View style={styles.box_2} />
-
-      <View style={styles.box_3} />
-
-      <View style={styles.box_4} />
+      <View style={styles.card_container}>
+        <View style={styles.card_body}>
+          <Text style={styles.card_title}>Eddard Stark</Text>
+          <Text style={styles.card_text}>Winter is coming</Text>
+        </View>
+        <TouchableOpacity style={styles.card_button_container}>
+          <Text style={styles.card_button_title}>I LIKED</Text>
+        </TouchableOpacity>
+      </View>
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    flex: 0.5,
-    backgroundColor: 'cyan',
-    justifyContent:'center',
+    flex: 1,
+    backgroundColor: 'gray',
   },
-  box_1: {
-    backgroundColor: 'blue',
-    width: 75,
-    height: 75,
+  card_container: {
+    backgroundColor: 'white',
+    margin: 10,
+    borderWidth: 1,
+    borderColor: 'gray',
+    borderRadius: 10,
   },
-  box_2: {
-    backgroundColor: 'red',
-    width: 75,
-    height: 75,
+  card_body: {
+    padding: 10,
   },
-  box_3: {
-    backgroundColor: 'purple',
-    width: 75,
-    height: 75,
+  card_title: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    margin: 10,
+    marginBottom: 3,
   },
-  box_4: {
-    backgroundColor: 'yellow',
-    width: 75,
-    height: 75,
+  card_text: {
+    fontSize: 18,
+    margin: 10,
+    marginTop: 3,
+  },
+  card_button_container: {
+    backgroundColor: '#00C2FF',
+    padding: 10,
+    alignItems: 'center',
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
+  },
+  card_button_title: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: 'white',
   },
 });
 export default App;
