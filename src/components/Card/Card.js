@@ -1,22 +1,17 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-
-import {View, Text, TouchableOpacity} from 'react-native';
-
+import {View, Text, Image} from 'react-native';
 import styles from './Card.style';
-
-const Card = () => {
+const Card = ({catalog}) => {
   return (
     <View style={styles.container}>
-      <View style={styles.body}>
-        <Text styles={styles.title}>Arya Stark</Text>
-        <Text style={styles.text}>Winter is coming</Text>
+      <Image style={styles.image} source={{uri: catalog.imgURL}} />
+      <View style={styles.descriptions}>
+        <Text>{catalog.title}</Text>
+        <Text>{catalog.description}</Text>
+        <Text>{catalog.price}</Text>
       </View>
-      <TouchableOpacity style={styles.button_container}>
-        <Text style={styles.button_title}>I LIKED</Text>
-      </TouchableOpacity>
     </View>
   );
 };
-
 export default Card;

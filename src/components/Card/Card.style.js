@@ -1,38 +1,26 @@
 /* eslint-disable prettier/prettier */
-import {StyleSheet} from 'react-native';
-
+import {Dimensions, StyleSheet} from 'react-native';
 export default StyleSheet.create({
-    container: {
-    backgroundColor: 'white',
-    margin: 10,
-    borderWidth: 1,
-    borderColor: 'gray',
-    borderRadius: 10,
+  container: {
+     backgroundColor:'gray',
+     borderRadius:10,
+     display:'flex',
+     width: Dimensions.get('window').width / 2,
   },
-  body: {
-    padding: 10,
+  image: {
+    height: Dimensions.get('window').height / 4,
+    borderRadius:5,
+    resizeMode: 'contain',
   },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    margin: 10,
-    marginBottom: 3,
-  },
-  text: {
-    fontSize: 18,
-    margin: 10,
+  title: {fontWeight: 'bold', fontSize: 18},
+  description: {
     marginTop: 3,
   },
-  button_container: {
-    backgroundColor: '#00C2FF',
-    padding: 10,
-    alignItems: 'center',
-    borderBottomLeftRadius: 10,
-    borderBottomRightRadius: 10,
+  author: {
+    fontStyle: 'italic',
+    textAlign: 'right',
   },
-  button_title: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    color: 'white',
+  inner_container: {
+    padding: 5,
   },
 });
