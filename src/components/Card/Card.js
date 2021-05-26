@@ -7,11 +7,13 @@ const Card = ({catalog}) => {
     <View style={styles.container}>
       <Image style={styles.image} source={{uri: catalog.imgURL}} />
       <View style={styles.descriptions}>
-        <Text>{catalog.title}</Text>
+        <Text style={styles.title}>{catalog.title}</Text>
+        <Text style={styles.model}>{catalog.model}</Text>
         <Text>{catalog.description}</Text>
-        <Text>{catalog.price}</Text>
+        <Text style={styles.price}>{catalog.price}</Text>
       </View>
     </View>
   );
 };
 export default Card;
+
