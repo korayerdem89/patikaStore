@@ -11,26 +11,24 @@ export default StyleSheet.create({
   },
   image: {
     marginBottom:3,
-    height: Dimensions.get('window').height / 3.5,
+    height: Dimensions.get('window').height / 3.9,
     borderRadius:3,
     margin:10,
     resizeMode:'contain',
     padding:5,
     borderColor:'white',
-  
+
     backgroundColor:'white',
    },
    descriptions: {
      padding:4,
    },
   title: {fontWeight: 'bold',   fontSize: 18},
-  description: {
-    marginTop: 3,
-  },
   model: {
     fontWeight: 'bold',
   },
   price: {
     color:'gray',
+    paddingVertical:5,
   },
 });
