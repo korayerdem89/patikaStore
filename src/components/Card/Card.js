@@ -9,7 +9,7 @@ const Card = ({catalog}) => {
       <View style={styles.descriptions}>
         <Text style={styles.title}>{catalog.title}</Text>
         <Text style={styles.model}>{catalog.model}</Text>
-        <Text>{catalog.description}</Text>
+
         <Text style={styles.price}>{catalog.price}</Text>
       </View>
     </View>
