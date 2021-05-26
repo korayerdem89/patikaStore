@@ -17,7 +17,7 @@ export default StyleSheet.create({
     resizeMode:'contain',
     padding:5,
     borderColor:'white',
-    borderWidth:1,
+  
     backgroundColor:'white',
    },
    descriptions: {
