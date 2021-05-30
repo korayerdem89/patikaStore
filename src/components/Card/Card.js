@@ -13,6 +13,10 @@ const Card = ({catalog}) => {
       <View style={styles.descriptions}>
         <Text style={styles.title}>{catalog.title}</Text>
         <Text style={styles.model}>{catalog.model}</Text>
+<<<<<<< HEAD
+=======
+
+>>>>>>> c64d3262b414ad77e2df86bde4312d5d0d9f43c0
         <Text style={styles.price}>{catalog.price}</Text>
         {!catalog.inStock &&(
         <Text style={styles.stockText}>STOKTA YOK</Text>
