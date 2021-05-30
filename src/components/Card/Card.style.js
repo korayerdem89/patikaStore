@@ -31,4 +31,9 @@ export default StyleSheet.create({
     color:'gray',
     paddingVertical:5,
   },
+  stockText: {
+    padding:5,
+    color:'red',
+    fontWeight:'bold'
+  }
 });
