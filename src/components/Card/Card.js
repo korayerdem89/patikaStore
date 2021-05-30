@@ -21,6 +21,7 @@ const Card = ({catalog}) => {
     </View>
   );
 };
+
 export default Card;
 
 
